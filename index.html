@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitstop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pitstop</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="content">
+        <h2>Welcome to Pitstop!</h2>
+        <p>A car buying helper chatbot is designed to assist customers through the process of purchasing a vehicle. It can provide information about different car models, financing options, schedule test drives, and connect customers with sales representatives. Is there something specific you would like to know or discuss about a car buying helper chatbot?</p>
+    </section>
+
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>Welcome to our car buying helper chatbot! We're here to make your car buying experience seamless and enjoyable. Whether you're looking for information on the latest models, exploring financing options, scheduling a test drive, or connecting with a sales representative, our chatbot is designed to assist you every step of the way.</p>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us today. Our team is ready to assist you with any inquiries. Click the chatbot icon to open the chatbot.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pitstop. All rights reserved.</p>
+    </footer>
+
+    <!-- Watson Assistant Chatbot Integration Script -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "45a5c52c-57a1-4a29-a56a-30bf91ac3e88", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "fd695e87-7294-4a19-a57e-070f16aae881", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+</html>
