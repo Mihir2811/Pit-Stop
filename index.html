@@ -37,20 +37,18 @@
     <footer>
         <p>&copy; 2024 Pitstop. All rights reserved.</p>
     </footer>
-
-    <!-- Watson Assistant Chatbot Integration Script -->
     <script>
-        window.watsonAssistantChatOptions = {
-            integrationID: "45a5c52c-57a1-4a29-a56a-30bf91ac3e88", // The ID of this integration.
-            region: "au-syd", // The region your integration is hosted in.
-            serviceInstanceID: "fd695e87-7294-4a19-a57e-070f16aae881", // The ID of your service instance.
-            onLoad: async (instance) => { await instance.render(); }
-        };
-        setTimeout(function(){
-            const t=document.createElement('script');
-            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-            document.head.appendChild(t);
-        });
-    </script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "45a5c52c-57a1-4a29-a56a-30bf91ac3e88", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "fd695e87-7294-4a19-a57e-070f16aae881", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 </html>
