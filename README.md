@@ -1,0 +1,1 @@
+A car buying helper chatbot is designed to assist customers through the process of purchasing a vehicle. It can provide information about different car models, financing options, schedule test drives, and connect customers with sales representatives. Is there something specific you would like to know or discuss about a car buying helper chatbot
